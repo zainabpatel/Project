@@ -28,10 +28,10 @@
     color: rgba(255,255,255,1);
 }
 
-div.black-voices {
+div.blackvoices {
     position: relative 
 }
-div.black-voices p {
+div.blackvoices p {
     margin: 0;
     position: absolute;
     top: 50%;
