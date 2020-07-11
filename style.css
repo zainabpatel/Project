@@ -1,8 +1,8 @@
-#canvas1{
-    width: 100vw;
-    height: 100vh;
-  }
-  html,body{
-    margin: 0;
-    padding: 0;
-  }
+.header-bg{
+    background:rgba(0,0,0,0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    
+}
+.header-bg a{
+    color: rgba(255,255,255,1);
+}
