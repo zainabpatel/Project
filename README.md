@@ -1,18 +1,5 @@
 ## Black Women in STEM Project ##
 
-                                                                     
-                                   88                                
-                                   ""                         ,d     
-                                                              88     
-8b,dPPYba,  8b,dPPYba,  ,adPPYba,  88  ,adPPYba,  ,adPPYba, MM88MMM  
-88P'    "8a 88P'   "Y8 a8"     "8a 88 a8P_____88 a8"     ""   88     
-88       d8 88         8b       d8 88 8PP""""""" 8b           88     
-88b,   ,a8" 88         "8a,   ,a8" 88 "8b,   ,aa "8a,   ,aa   88,    
-88`YbbdP"'  88          `"YbbdP"'  88  `"Ybbd8"'  `"Ybbd8"'   "Y888  
-88                                ,88                                
-88                              888P"                                
-
-
 
 --------------------------------------
 
@@ -44,10 +31,11 @@ short bio
 
 --------------------------------------
 
-## THANKS ##
+## THANK YOU ##
 
 a short thanks to CFG for the opportunity, learning, facilitating, etc
 maybe a shoutout to the lecturers
+and a thanks for reading
 
 
 --------------------------------------
