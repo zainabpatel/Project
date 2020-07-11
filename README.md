@@ -5,18 +5,19 @@
 
 ## INTRODUCTION ##
 
-short bio
+Black Voices is an organisation led by technology enthusiasts Zainab, Hassanat, Iona and Saman, who are enraged about the lack of Black, female representation in STEM (Science, Technology, Engineering and Maths). They aim to celebrate the achievements of underappreciated, yet crucial women, without whom life as we know it would not be the same.
 
 
 --------------------------------------
 
 ## CONTENTS ##
 
-(1) different
-(2) pages
-(3) on
-(4) our
-(5) website
+- different
+- pages
+- on
+- our
+- website
+- and links to external pages
 
 
 --------------------------------------
