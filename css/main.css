@@ -41,29 +41,9 @@ body {
   background: #fff;
   height: 100%;
   width: 40%;
-  border-radius: 0px;
+  border-radius: 25px;
 }
-.container .card:nth-child(1) {
-  margin-right: 1em;
-  width: 40%;
-  @media(max-width: 940px);
-}
-.container .card:nth-child(2) {
-  width: 40%;
-}
-@media(max-width: 940px) {
-  .container .card:nth-child(2) {
-    margin-right: 1em;
-  }
-}
-.container .card:nth-child(3) {
-  width: 40%;
-}
-@media(max-width: 940px) {
-  .container .card:nth-child(3) {
-    margin-right: 1em;
-  }
-}
+
 .container .card blockquote:before {
   content: '"';
   padding-right: 0.5em;
