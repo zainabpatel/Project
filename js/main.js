@@ -3,18 +3,18 @@ var circles = [],
     context = canvas.getContext("2d"),
     
     // SETTINGS 
-    opacity = 0.6,                                      // the opacity of the circles 0 to 1
-    colors = ['rgba(109, 62, 46, 1)' + opacity + ')',       // an array of rgb colors for the circles
+    opacity = 0.6,
+    colors = ['rgba(109, 62, 46, 1)' + opacity + ')',
               'rgba(155, 96, 82, 1)' + opacity + ')',
               'rgba(238, 209, 195, 1)' + opacity + ')',
               'rgba(28, 14, 13, 1)' + opacity + ')'
              ],
-    minSize = 1,                                        // the minimum size of the circles in px
-    maxSize = 10,                                       // the maximum size of the circles in px
-    numCircles = 300,                                   // the number of circles
-    minSpeed = -2,                                     // the minimum speed, recommended: -maxspeed
-    maxSpeed = 2,                                    // the maximum speed of the circles
-    expandState = true;                                      // the direction of expansion
+    minSize = 1,
+    maxSize = 10,
+    numCircles = 300,
+    minSpeed = -2,
+    maxSpeed = 2,
+    expandState = true;
 
 function buildArray() {
     'use strict';
@@ -108,16 +108,11 @@ function animate() {
     var canvas = document.getElementById("canvas1"),
         context = canvas.getContext("2d");
 
-    // clear the canvas
     context.clearRect(0, 0, canvas.width, canvas.height);
 
-
-    // draw the next frame
     xVal++;
     build();
 
-    //console.log("Prep: animate ==> requestAnimFrame");
-    // request a new frame
     requestAnimFrame(function () {
         animate();
     });
@@ -130,7 +125,6 @@ window.onload = function () {
     animate();
 };
 
-
 window.onresize = function () {
     'use strict';
     console.log("resize");
@@ -139,3 +133,20 @@ window.onresize = function () {
     //buildArray();
     animate();
 };
+
+mybutton = document.getElementById("upButton");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
