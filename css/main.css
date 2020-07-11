@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}	
+
 #canvas1{
     width: 100vw;
     height: 100vh;
@@ -7,6 +12,13 @@
     margin: 0;
     padding: 0;
   }
+	
+.nav {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font family: sans-serif;
+}
 
 .header-bg{
     background:rgba(0,0,0,0);    
@@ -18,9 +30,9 @@
 
 body {
   background-color: rgba(255, 255, 255, 1);
-  margin: 0px;
-  padding: 0px;
   font-family: sans-serif;
+  position: center;
+
 }
 
 .container {
