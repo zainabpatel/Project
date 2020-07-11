@@ -1,4 +1,5 @@
-## Black Women in STEM Project ##
+### BLACK VOICES ###
+== Black Women in STEM ==
 
 
 --------------------------------------
