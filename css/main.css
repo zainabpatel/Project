@@ -58,7 +58,7 @@ body {
   }
 }
 .container .card {
-  background: #fff;
+  background: #ffffff;
   height: 100%;
   width: 40%;
   border-radius: 25px;
@@ -80,7 +80,8 @@ body {
 .container .card .info {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  background: #F7F7F7;
+  background: #000000;
+  color: #ffffff;
   padding: 1em;
   border-top: 1px solid #ccc;
   position: relative;
@@ -99,8 +100,7 @@ body {
           transform: rotate(45deg);
   width: 20px;
   height: 20px;
-  background: #000000;
-  color: #ffffff;
+  background: #fff;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   display: block;
