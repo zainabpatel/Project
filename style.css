@@ -2,18 +2,21 @@
     width: 100vw;
     height: 100vh;
   }
+
   html,body{
     margin: 0;
     padding: 0;
   }
 
-body {background-color: rgba(255, 255, 255, 1);}
+body {
+    background-color: rgba(255, 255, 255, 1);
+}
 
 .header-bg{
     background:rgba(0,0,0,0.8);
-    backdrop-filter: saturate(180%) blur(20px);
-    
+    backdrop-filter: saturate(180%) blur(20px);    
 }
+
 .header-bg a{
     color: rgba(255,255,255,1);
 }
