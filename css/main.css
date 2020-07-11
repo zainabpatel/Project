@@ -99,7 +99,8 @@ body {
           transform: rotate(45deg);
   width: 20px;
   height: 20px;
-  background: #fff;
+  background: #000000;
+  color: #ffffff;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   display: block;
