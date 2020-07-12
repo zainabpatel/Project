@@ -13,15 +13,6 @@
     padding: 0;
   }
 	
-.nav {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    font family: sans-serif;
-    background-color: #000000;
-    color: #ffffff;
-}
-
 .blm-header{
     background-color: rgb(158, 96, 86);
 
@@ -42,10 +33,6 @@
     color: rgba(255,255,255,1);
 }
 
-.navbar-default {
-    background-color: #000000;
-    color: #ffffff;
-}
 
 div.blackvoices {
     position: relative 
