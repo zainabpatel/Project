@@ -22,6 +22,18 @@
     color: #ffffff;
 }
 
+.blm-header{
+    background-color: rgb(158, 96, 86);
+
+}
+.blm-header a{
+    color: black
+
+}
+.blm-header button{
+    color: black;
+    font-size: 16px;
+}
 .header-bg{
     background:rgba(0,0,0,1);    
 }
