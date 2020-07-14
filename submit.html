@@ -32,11 +32,11 @@
                 
         </head>
 
-        <body>
+       
             
         <!-- ==== NAV BAR ===== -->
 
-    </head>
+   
 <body>
     <nav class="blm-header fixed-top sticky-top" role="navigation">
         <div class ="container d-flex flex-row justify-content-around"> 
@@ -56,25 +56,43 @@
 
     </nav>
 </head>
-<body>
-    <a name="submit"></a>
-      <div class="container" id="submit">
-        <h2>Submit Form</h2>
-        <p>
-          Send us black women in STEM that deserve to be featured!
-        </p>
-             
-              
-        <div class="container" id="form">
-          <form id="contact-form" method="POST" action="">
-          <input name="name" type="text" class="form-control" placeholder="Name" required>
-          <br>
-          <input name="email" type="email" class="form-control" placeholder="Email" required>
-          <br>
-          <textarea name="message" class="form-control" placeholder="Type your message here..." rows="20" required></textarea>
-          <br>
-          <input type="submit" class="form-control submit" value="SEND" onclick="return confirm('Are you sure?')">
-                </form></div>
+
+    <div class ="wrapper">
+<div class="content">
+  <h2>We'd love to hear from you!</h2>
+  <p>Connect with us by sending us black women in STEM you want to celebrate.</p>
+</div>
+  
+  <div class = "form">
+    
+    <div class = "top-form">
+      <div class ="inner form">
+        <div class = "label">Name</div>
+        <input type="text" placeholder ="Full name">
+      </div>
+      <div class ="inner-form">
+        <div class ="label">Email</div>
+        <input type ="text" placeholder= "Example@gmail.com" required>
+      </div>
+      
+      <div class="middle form">
+        <div class = "label">Subject</div>
+        <input type ="text" placeholder ="Subject" required>
+      </div>
+    </div>
+    <div class="bottom-form">
+      <div class="inner-form">
+        <div class="label"> Message</div>
+        <textarea placeholder="Your message"required></textarea>
+      </div>
+    </div>
+
+    <div class="btn">send form</div>
+
+  </div>
+</div>
+
+        
         
       <!-- ==== END SUBMIT FORM ==== -->
 </body>
