@@ -11,7 +11,7 @@ var circles = [],
              ],
     minSize = 1,
     maxSize = 10,
-    numCircles = 100,
+    numCircles = 300,
     minSpeed = -2,
     maxSpeed = 2,
     expandState = true;
