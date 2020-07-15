@@ -2,7 +2,17 @@
     margin: 0;
     padding: 0;
 }	
-	
+
+#canvas1{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  html,body{
+    margin: 0;
+    padding: 0;
+  }
+    
 .blm-header{
     background-color: rgb(158, 96, 86);
 
@@ -16,6 +26,13 @@
     font-size: 16px;
 }
 
+.header-bg{
+    background:rgba(0,0,0,1);    
+}
+
+.header-bg a{
+    color: rgba(255,255,255,1);
+}
 
 
 div.blackvoices {
@@ -41,8 +58,12 @@ body {
   display: -webkit-box;
   display: flex;
 }
-
-
+@media(max-width: 940px) {
+  .container {
+    display: block;
+    padding: 1em;
+  }
+}
 .container .card {
   background: #ffffff;
   height: 100%;
@@ -58,7 +79,11 @@ body {
   content: '"';
   padding-left: 0.5em;
 }
-
+@media(max-width: 940px) {
+  .container .card {
+    padding: 1em;
+  }
+}
 .container .card .info {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -87,7 +112,11 @@ body {
   border-bottom: 1px solid #ccc;
   display: block;
 }
-
+@media(max-width: 940px) {
+  .container .card .info {
+    margin: 0;
+  }
+}
 .container .card .info img {
   border-radius: 50%;
   display: block;
@@ -101,7 +130,11 @@ body {
   font-size: 12px;
   margin-top: 20px;
 }
-
+@media (max-width: 480px) {
+  .container .card .info cite {
+    font-size: 12px;
+  }
+}
 .container .card .info cite span {
   font-size: 12px;
   position: relative;
@@ -109,8 +142,18 @@ body {
   cursor: pointer;
   bottom: 3px;
 }
-
-
+@media (max-width: 414px) {
+  .container .card .info cite .name {
+    margin-left: 0;
+    display: inline-block;
+  }
+}
+@media (max-width: 414px) {
+  .container .card .info cite strong {
+    display: block;
+    width: 85px;
+    margin-top: 10px;
+  }
 }
 .container .card .info cite .work {
   display: block;
@@ -118,7 +161,10 @@ body {
   border-bottom: none;
   font-style: normal;
 }
-
+@media (max-width: 414px) {
+  .container .card .info cite .work {
+    margin-top: 4em;
+  }
 }
 
 input[type=text] {
@@ -132,6 +178,24 @@ input[type=text] {
   margin: 0;
   padding: 0;
   user-select: none;
+}
+.wrapper {
+  margin: 0px auto 0;
+  width: 100%;
+  max-width: 680px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  letter-spacing: 1px;
+}
+.form {
+  width: 100%;
+  margin: 25px 0;
 }
 .wrapper {
   margin: 0px auto 0;
