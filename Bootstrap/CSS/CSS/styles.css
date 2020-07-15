@@ -1,12 +1,12 @@
-.blm-header{
+.nav{
     background-color: rgb(158, 96, 86);
 
 }
-.blm-header a{
+.nav a{
     color: black
 
 }
-.blm-header button{
+.nav button{
     color: black;
     font-size: 16px;
 }
