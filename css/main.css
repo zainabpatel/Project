@@ -8,6 +8,14 @@ body {
   font-family: sans-serif;
   position: center;
 }
+
+p {
+    position: center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
     
 .nav{
     background-color: rgb(158, 96, 86);
@@ -61,14 +69,12 @@ input[type=text] {
 .content {
   text-align: center;
 }
-
-.content h1 {
-  letter-spacing: 1px;
-}
+    
 .form {
   width: 100%;
   margin: 25px 0;
 }
+    
 .wrapper {
   margin: 0px auto 0;
   width: 100%;
@@ -76,6 +82,7 @@ input[type=text] {
   padding: 20px;
   box-sizing: border-box;
 }
+    
 .content {
   text-align: center;
 }
@@ -83,10 +90,12 @@ input[type=text] {
 .content h1 {
   letter-spacing: 1px;
 }
+    
 .form {
   width: 100%;
   margin: 25px 0;
 }
+    
 .wrapper {
   margin: 0px auto 0;
   width: 100%;
@@ -94,18 +103,9 @@ input[type=text] {
   padding: 20px;
   box-sizing: border-box;
 }
+    
 .content {
   text-align: center;
-}
-
-.content h1 {
-  letter-spacing: 1px;
-    margin: 0;
-    position: center;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
 }
 
 .top-form,
