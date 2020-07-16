@@ -12,12 +12,10 @@
     margin: 0;
     padding: 0;
   }
-#blackvoices{
+
+.aboutus{
     text-align: center;
-  }
-#womeninstem{
-    text-align: center;
-   }
+}
     
 .nav{
     background-color: rgb(158, 96, 86);
