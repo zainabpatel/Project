@@ -57,6 +57,7 @@ body {
 .container {
   display: -webkit-box;
   display: flex;
+  text-align: center; 
 }
 @media(max-width: 940px) {
   .container {
