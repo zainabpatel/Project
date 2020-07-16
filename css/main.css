@@ -58,7 +58,11 @@ input[type=text] {
   margin: 8px 0;
   box-sizing: border-box;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
 .wrapper {
   margin: 0px auto 0;
   width: 100%;
@@ -69,7 +73,10 @@ input[type=text] {
 .content {
   text-align: center;
 }
-    
+ .content h1 {
+  letter-spacing: 1px;
+} 
+
 .form {
   width: 100%;
   margin: 25px 0;
