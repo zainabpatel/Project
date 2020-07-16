@@ -81,6 +81,28 @@
     height: 0.3rem;
     background: #6d3e2e;
   }
+
+  h3 {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-size: 3rem;
+    color: #6d3e2e;
+    font-family: sans-serif;
+    grid-column: 3 / span 4;
+    grid-row: 2 / span 1;
+    z-index: 2;
+    align-self: end;
+  }
+  h3::after {
+    content: " ";
+    position: relative;
+    display: block;
+    top: -0.4rem;
+    left: 0;
+    width: 4rem;
+    height: 0.3rem;
+    background: #6d3e2e;
+  }
   
   .text {
     grid-column: 3 / span 2;
