@@ -81,7 +81,7 @@
     height: 0.3rem;
     background: #6d3e2e;
   }
-
+  
   .text {
     grid-column: 3 / span 2;
     grid-row: 3 / span 1;
@@ -251,4 +251,3 @@
       grid-row: 5 / -1;
     }
   }
-  
