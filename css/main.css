@@ -58,6 +58,7 @@ input[type=text] {
   margin: 8px 0;
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +76,6 @@ input[type=text] {
   width: 100%;
   margin: 25px 0;
 }
-    
 .wrapper {
   margin: 0px auto 0;
   width: 100%;
@@ -83,28 +83,15 @@ input[type=text] {
   padding: 20px;
   box-sizing: border-box;
 }
-    
 .content {
   text-align: center;
-}
-
-.content h1 {
   letter-spacing: 1px;
 }
-    
 .form {
   width: 100%;
   margin: 25px 0;
 }
-    
-.wrapper {
-  margin: 0px auto 0;
-  width: 100%;
-  max-width: 680px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-    
+
 .top-form,
 .middle-form,
 .bottom-form {
@@ -112,7 +99,6 @@ input[type=text] {
   min-height: 65px;
   margin: 10px 0;
 }
-
 .form input[type="text"],
 .form textarea {
   border: 2px solid #A9A9A9;
@@ -130,12 +116,10 @@ input[type=text] {
   box-shadow: inset 0 1px 1px #8B4513,
     0 0 8px #8B4513;
 }
-
 .form .label {
   margin-bottom: 5px;
   text-transform: capitalize;
 }
-
 .top-form .middle {
   width: 29.9%;
   float: left;
@@ -145,19 +129,15 @@ input[type=text] {
 .top-form .middle-form:last-child {
   margin-right: 0;
 }
-
 .middle-form {
   clear: both;
 }
-
 .bottom-form textarea {
   height: 80px;
 }
-
 .bottom-form textarea {
   height: 80px;
 }
-
 .btn {
   background: #876852 ;
   width: 200px;
@@ -169,4 +149,3 @@ input[type=text] {
   letter-spacing: 5px;
   cursor: pointer;
 }
-
