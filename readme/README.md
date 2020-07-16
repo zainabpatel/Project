@@ -13,12 +13,13 @@ Black Voices is an organisation led by technology enthusiasts Zainab, Hassanat, 
 
 ## CONTENTS ##
 
-- different
-- pages
-- on
-- our
-- website
-- and links to external pages
+- Home
+- About
+- Donate
+- Petitions
+- Resources
+- History
+- Submit
 
 
 --------------------------------------
@@ -35,9 +36,7 @@ Black Voices is an organisation led by technology enthusiasts Zainab, Hassanat, 
 
 ## THANK YOU ##
 
-a short thanks to CFG for the opportunity, learning, facilitating, etc
-maybe a shoutout to the lecturers
-and a thanks for reading
+Thank you to CFG for the opportunity to learn HTML, CSS, and Javascript & to our amazing teachers for being so patient while relaying complex concepts in simple terms.
 
 
 --------------------------------------
