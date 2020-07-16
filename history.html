@@ -97,108 +97,192 @@
                 
 <p><h3>A Brief Timeline of events:</h3></p>
 
-   <ul class="tl">
+   <style>
+* {
+  box-sizing: border-box;
+}
 
-    <li class="tl-item" ng-repeat="item in retailer_history">
-      <div class="timestamp">
-        1619-1865:<br>
-      </div>
-      <div class="item-title">Harriet Tubman, a famous abolitionist, 
+body {
+  background-color: rgb(158, 96, 86);
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid black;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>1619-1865</h2>
+      <p>Harriet Tubman, a famous abolitionist, 
           escaped slavery and helped to free over 70 slaves through 
           the Underground Railroad. 
-        Many other enslaved people fought for their freedom.</div>
-    </li>
-
-    <li class="tl-item" ng-repeat="item in retailer_history">
-      <div class="timestamp">
-        1920s:<br>
-      </div>
-      <div class="item-title"> Huge cultural changes challenged racism in Harlem, New York.</div>
-    </li>
-
-    <li class="tl-item" ng-repeat="item in retailer_history">
-      <div class="timestamp">
-        1930s:<br>
-      </div>
-      <div class="item-title">The rise of the Civil Rights movement, led by prominent figures such as Malcolm X.</div>
-    </li>
-
-    <li class="tl-item" ng-repeat="item in retailer_history">
-        <div class="timestamp">
-            1955-56:<br> 
-        </div>
-        <div class="item-title">Civil Rights protests against segregation became more widespread, particularly after Rosa Parks was arrested for refusing 
-            to give up her seat on a bus for a white man.</div>
-      </li>
-
-     <li class="tl-item" ng-repeat="item in retailer_history">
-        <div class="timestamp">
-            1963:<br> 
-        </div>
-        <div class="item-title">Martin Luther King gave his famous ‘I Have a Dream’ speech at a massive protest march in Washington, DC, calling for civil and 
-            economic rights for Black Americans.</div>
-    </li>  
-
-    <li class="tl-item" ng-repeat="item in retailer_history">
-        <div class="timestamp">
-            1965:<br> 
-        </div>
-        <div class="item-title">Protest marches from Selma to Montgomery were met with violence and police resistance. Week-long protests against police 
-            brutality and racial profiling in Los Angeles resulted in the death of 3 dozen people.</div>
-    </li>  
-
-    <li class="tl-item" ng-repeat="item in retailer_history">
-        <div class="timestamp">
-            1968:<br> 
-        </div>
-        <div class="item-title">Muhammad Ali, Tommie Smith and John Carlos raised the Black Power fist at Madison Square Garden at the Olympics in Mexico. This 
-            sparked more Black Power protests throughout the 70s.</div>
-    </li>  
-
-    <li class="tl-item" ng-repeat="item in retailer_history">
-        <div class="timestamp">
-            1973:<br> 
-        </div>
-        <div class="item-title">The National Black Feminist Organisation was founded to address issues faced by Black women.</div>
-    </li> 
-
-    <li class="tl-item" ng-repeat="item in retailer_history">
-        <div class="timestamp">
-            1965-76:<br> 
-        </div>
-        <div class="item-title">Protests, rallies and boycotts led by Martin Luther King aimed to end segregation, create inclusive education systems and 
-            address health disparities for Black Americans.</div>
-    </li>  
-
-    <li class="tl-item" ng-repeat="item in retailer_history">
-        <div class="timestamp">
-            1966-82:<br>
-        </div>
-        <div class="item-title">The Black Panther Party, a political party led by Bobby Seale and Huey Newton, was formed to challenge racial misconduct and 
-            protect Black Americans from police brutality. The Black Liberation Movement built on this idea.</div>
-    </li>  
-
-    <li class="tl-item" ng-repeat="item in retailer_history">
-        <div class="timestamp">
-            1992:<br> 
-        </div>
-        <div class="item-title">Riots broke out in Los Angeles after the police who severely beat up a Black man called Rodney King were acquitted.</div>
-    </li> 
-
-    <li class="tl-item" ng-repeat="item in retailer_history">
-        <div class="timestamp">
-            2013-present day:<br> 
-        </div>
-        <div class="item-title">The Black Lives Matter movement started in 2013.</div>
-        <div class="item-title">Colin Kaepernick and other prominent athletes kneeled at sporting 
-            events in 2016. A huge amount of international support for the movement ensued after the deaths of George Floyd, Ahmaud Arbery 
-            and Breonna Taylor.</div>
-    </li>  
-
-  </ul>
-
+        Many other enslaved people fought for their freedom.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1920s</h2>
+      <p>Huge cultural changes challenged racism in Harlem, New York.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1930s</h2>
+      <p>The rise of the Civil Rights movement, led by prominent figures such as Malcolm X.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1955-56:</h2>
+      <p>Civil Rights protests against segregation became more widespread, particularly after Rosa Parks was arrested for refusing 
+            to give up her seat on a bus for a white man.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1963:</h2>
+      <p>Martin Luther King gave his famous ‘I Have a Dream’ speech at a massive protest march in Washington, DC, calling for civil and 
+            economic rights for Black Americans.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1965:</h2>
+      <p>Protest marches from Selma to Montgomery were met with violence and police resistance. Week-long protests against police 
+            brutality and racial profiling in Los Angeles resulted in the death of 3 dozen people.</p>
+    </div>
+  </div>
 </div>
-</div>
+
+</body>
+</html>
+
 
 <!-- ==== FOOTER ==== -->
             
