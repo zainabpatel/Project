@@ -4,14 +4,14 @@ body{
     line-height:1.3em;
     min-width:920px;
   }
-  .tl-item{
+  .tl {
       font-family: "Roboto",sans-serif;
     width:50%;
     margin:auto;
     display:block;
     position:relative;
   }
-  .history-tl-container ul.tl{
+  .tl ul.tl{
       margin:20px 0;
       padding:0;
       display:inline-block;
