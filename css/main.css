@@ -70,12 +70,6 @@ input[type=text] {
   padding: 20px;
   box-sizing: border-box;
 }
-.content {
-  text-align: center;
-}
- .content h1 {
-  letter-spacing: 1px;
-} 
 
 .form {
   width: 100%;
@@ -111,10 +105,6 @@ input[type=text] {
   box-sizing: border-box;
 }
     
-.content {
-  text-align: center;
-}
-
 .top-form,
 .middle-form,
 .bottom-form {
@@ -122,6 +112,7 @@ input[type=text] {
   min-height: 65px;
   margin: 10px 0;
 }
+
 .form input[type="text"],
 .form textarea {
   border: 2px solid #A9A9A9;
