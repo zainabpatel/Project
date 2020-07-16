@@ -12,6 +12,12 @@
     margin: 0;
     padding: 0;
   }
+#blackvoices{
+    text-align: center;
+  }
+#womeninstem{
+    text-align: center;
+   }
     
 .nav{
     background-color: rgb(158, 96, 86);
@@ -37,7 +43,7 @@
 
 div.blackvoices {
     position: center
-    text-align: center;
+   
 }
 div.blackvoices p {
     margin: 0;
@@ -58,7 +64,7 @@ body {
 .container {
   display: -webkit-box;
   display: flex;
-  text-align: center; 
+
 }
 @media(max-width: 940px) {
   .container {
